@@ -3,6 +3,8 @@ import { Moon, Star, Rocket, Users, MapPin, Bed, Wifi, Utensils } from "lucide-r
 import Image from "next/image"
 import Link from "next/link"
 import StarryBackground from '@/components/starry-background'
+import PricingTableComponent from '@/components/pricing-table'
+
 export default function LandingPage() {
   const speakers = [
     {
@@ -177,9 +179,9 @@ export default function LandingPage() {
 
         {/* Ticket Section */}
         <section id="tickets" className="py-20 bg-background bg-opacity-80">
+          <PricingTableComponent />
           <div className="container mx-auto px-4 text-center">
             <p className="mb-8 text-xl">Secure your spot at this groundbreaking lunar conference!</p>
-            <Link href="https://nextjs.org/conf" className={buttonVariants()}>Get Your Ticket Now</Link>
             <div className="max-w-md mx-auto">
               <p className="text-sm text-gray-400 mt-4">Limited spots available. Earth-to-Moon transport not included.</p>
             </div>
